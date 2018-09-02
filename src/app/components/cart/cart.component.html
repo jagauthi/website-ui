@@ -1,0 +1,32 @@
+<div class="intro">
+  <button class="back" (click)="goBack()">Back</button>
+  <h1>Cart: </h1>
+</div>
+<div>
+<table>
+  <tr>
+    <th>ItemDescription</th>
+    <th>Quantity</th> 
+    <th>Price</th>
+    <th colspan="2">Remove/Add</th>
+  </tr> 
+  <tr *ngFor="let item of cart">
+    <td>
+      {{ item.item.description }}
+      <img width="100" height="100  " src="{{getImgPath(item.item)}}">
+    </td>
+    <td>x{{ item.quantity }}</td>
+    <td>{{ item.price | currency }}</td>
+    <td> <button (click)="removeFromCart(item.item, 1);">-</button></td>
+    <td> <button (click)="increaseQuantity(item.item, 1);">+</button></td>
+  </tr>
+  <tr>
+    <td>Total</td>
+    <td></td>
+    <td>{{ getTotalPrice() | currency }}</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<button class="checkout" (click)="goToCheckout();">Checkout</button>
+</div>

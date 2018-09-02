@@ -1,0 +1,22 @@
+<div class="main">
+  <h1>Login</h1>
+  <div>
+    <h2>
+      <label>Username:
+        <input #username />
+      </label>
+    </h2> 
+    <h2>
+      <label>Password:
+        <input #password />
+      </label>
+    </h2>
+    
+    <button (click)="login(username.value,password.value);">
+      Login
+    </button>
+    <button routerLink="/createAccount">
+      Create Account
+    </button>
+  </div>
+</div>

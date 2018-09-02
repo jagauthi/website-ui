@@ -1,0 +1,30 @@
+
+<div>
+    <h1>Create Account</h1>
+  
+    <div>
+      <h2>
+        <label>Username:
+          <input #username />
+        </label>
+      </h2>
+      <h2>
+        <label>Password:
+          <input #password />
+        </label>
+      </h2>
+      <h2>
+        <label>Email:
+          <input #email />
+        </label>
+      </h2>
+      
+      <button (click)="createAccount(username.value,password.value,email.value);">
+        Create
+      </button>
+      <button routerLink="/login">
+        Back to login
+      </button>
+    </div>
+    
+  </div>

@@ -1,0 +1,11 @@
+<div *ngIf="selectedUser">
+  <h2>{{ selectedUser.username }} Details</h2>
+  <div><span>Username: </span>{{selectedUser.username}}</div>
+  <div>
+    <label>Pass:
+      <input [(ngModel)]="selectedUser.password" placeholder="password"/>
+    </label>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>

@@ -1,0 +1,25 @@
+
+<div>
+  <div class="intro">
+    <select class="dropdown" (change)="goTo($event.target.value)" name="Filter">
+      <option>Account settings</option>
+      <option>Logout</option>
+    </select>   
+    <button class="cart" (click)="goToCart()">Cart ({{cart.length}})</button>
+    <h1 class="pageTitle">{{user.username}}'s Dashboard</h1>
+    <h3>Item Catalog:</h3>
+    <select class="filter" name="Filter">
+      <option>Category</option>
+      <option>Something</option>
+    </select>   
+  </div>
+  <div class="main">
+    <div *ngFor="let item of catalog" class="container">
+      <div class="thumbnail">
+        <img src="{{getImgPath(item)}}" (click)="addToCart(item, 1);">
+        <p class="title">{{ item.description }}</p> 
+        <p class="price">{{ item.price | currency }}</p> 
+      </div>
+    </div>
+  </div> 
+</div> 

@@ -1,0 +1,91 @@
+
+.main {
+  background-color: #3CBC8D;
+  border:solid black;
+  padding: 40px 0;
+  width: 90%;
+  margin:auto;
+}
+.container {
+  display: inline-block;
+  background: rgb(200, 200, 200);
+  width: 315px;
+  position: relative;
+  border-style: solid;
+  margin: 20px;
+}
+
+.pageTitle {
+  text-align:center;
+  font-size:40px;
+  text-underline-position: below
+}
+
+h1, h3 k, {
+  color: white;
+}
+
+img {
+  cursor:pointer;
+}
+
+.thumbnail {
+  border-style: solid;
+  border-color: #000000 ;
+  border: 5px;
+  position: relative;
+  padding: 50px;
+  border-radius: 0;
+  width:100%;
+}
+
+.title,
+.date {
+  color: #444;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.date {
+  color: #a3a3a3 ;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.price {
+  background-color: #a74fff;
+  border: 1px solid black;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  font-weight: 200;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: 100px;
+}
+
+button.cart {
+  display:block;
+  padding: 20px;
+  font-size:20px;
+  border-style:solid;
+  background-color: #3CBC8D;
+  color: white;
+  float:right;  
+}
+
+button:hover {
+  background-color: rgb(137, 255, 206);
+}
+
+.dropdown {
+  display:block;
+  margin-right: 0 !important;
+  margin-left:auto;
+}

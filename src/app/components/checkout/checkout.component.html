@@ -1,0 +1,33 @@
+<div class="main">
+    <select class="dropdown" (change)="goTo($event.target.value)" name="Filter">
+      <option>Visa</option>
+      <option>Master</option>
+    </select> 
+    <div>
+      <h2>
+        <label>Full name:
+          <input #fullName />
+        </label> 
+      </h2> 
+      <h2>
+        <label>Card Number:
+          <input #cardNumber />
+        </label>
+      </h2>
+      <h2>
+        <label>Exp Date (MM/YY):
+          <input #expDate />
+        </label>
+      </h2>
+      <h2>
+        <label>CSV:
+          <input #csvNumber />
+        </label>
+      </h2>
+      
+      <button (click)="submitPayment(fullName.value,cardNumber.value,expDate.value,csvNumber.value);">
+        Submit
+      </button>
+    </div>
+  </div>
+  
